@@ -1,0 +1,354 @@
+@media screen and (max-width: 768px) {
+    [aria-controls="navbarDropdown"] {
+        display: block;
+        
+    }
+
+    [aria-expanded="false"] ~ ul {
+        display: none;
+    }
+    
+
+    [aria-expanded="true"] ~ ul {
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 86px;
+        background-color: var(--white);
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: 0px 0px 20px rgba(52, 49, 75, 0.1);
+        padding: var(--size-100);
+    }
+
+    [aria-expanded="true"] ~ ul li a {
+        margin-right: var(--size-20);
+        color: var(--font-color-light);
+        font-size: var(--size-20);
+    }
+
+    [aria-expanded="true"] ~ ul li a:hover {
+        color: var(--font-color-link);
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .header-info {
+        margin-bottom: var(--size-100);
+    }
+
+    header .app-icons {
+        grid-template-columns: repeat(20,40px);
+        grid-template-rows: repeat(13, 40px);
+    }
+    .google{
+        grid-column: 3/5;
+        grid-row: 1/3;
+    }
+    .atlas{
+        grid-column: 8/11;
+        grid-row: 1/4;
+    }
+    .asana{
+        grid-column: 17/20;
+        grid-row: 1/4;
+    }
+
+    .weave{
+        grid-column: 12/15;
+        grid-row: 6/9;
+    }
+    .google-A{
+        grid-column: 6/8;
+        grid-row: 10/12;
+    }
+    .calendar{
+        grid-column: 16/19;
+        grid-row: 11/14;
+    }
+    .paypal{
+        grid-column: 2/5;
+        grid-row: 6/9;
+    }
+
+    .benefit-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .video-section {
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+        text-align: center;
+        gap: var(--size-40);
+    }
+    .video-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .video-section img {
+        width: 100%;
+        box-shadow: none;
+    }
+    .dot-box {
+        min-width: 175px;
+    }
+    .hubspot {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hubspot-right {
+        align-items: center;
+    }
+
+    .hubspot-right img {
+        margin-top: var(--size-10);
+    }
+    .hubspot-left {
+        flex: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hubspot-left .dots {
+        right: 165px;
+        bottom: 392px;
+        left: auto;
+    }
+
+    .hubspot-right > div {
+        width: 80%;
+        text-align: center;
+    }
+    .trusted div img {
+        width: var(--size-100);
+    }
+
+    .pricing {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4,180px);
+        margin-bottom: var(--size-100);
+    }
+    .pricing-card {
+        grid-column: 1/3;
+        grid-row: 1/3;
+        text-align: center;
+    }
+
+    .pricing-card button {
+        margin: 0 auto;
+    }
+    .info-card.component {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .info-card.image {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .info-card.cancel {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .info-card.moneyback {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+
+    .hire-us {
+        flex-direction: column;
+    }
+    .testimonial {
+        display: flex;
+        align-items: center;
+        gap: 200px;
+        padding: var(--size-20);
+        justify-content: space-between;
+    }
+    .testimonial div {
+        margin: 0;
+    }
+
+    .pre-footer {
+        display: grid;
+        grid-template-columns: 3fr 2fr 2fr;
+        grid-template-rows: repeat(2, 1fr);
+        gap: var(--size-30) 0;
+    }
+
+    .pf-company {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .pf-features {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .pf-doc {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .pf-resources {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    [aria-expanded="true"] ~ ul {
+        flex-direction: column;
+    }
+
+    .h-info h2 {
+        font-size: var(--size-30);
+        margin-bottom: var(--size-10);
+        margin-top: 0;
+    }
+    header {
+        gap: 0;
+    }
+
+    header .app-icons {
+        grid-template-columns: repeat(20,25px);
+        grid-template-rows: repeat(13, 25px);
+    }
+    .google{
+        grid-column: 3/5;
+        grid-row: 1/3;
+    }
+    .atlas{
+        grid-column: 8/11;
+        grid-row: 1/4;
+    }
+    .asana{
+        grid-column: 17/20;
+        grid-row: 1/4;
+    }
+
+    .weave{
+        grid-column: 12/15;
+        grid-row: 6/9;
+    }
+    .google-A{
+        grid-column: 6/8;
+        grid-row: 10/12;
+    }
+    .calendar{
+        grid-column: 16/19;
+        grid-row: 11/14;
+    }
+    .paypal{
+        grid-column: 2/5;
+        grid-row: 6/9;
+    }
+    .benefit-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .basic-lines:before,
+    .hr-lines:before {
+        display: none;
+    }
+    .page-lines:after,
+    .hr-lines:after {
+        display: none;
+    }
+
+    .basic-lines,
+    .page-lines,
+    .hr-lines{
+        margin: 0;
+    }
+
+    .why-front-dots {
+        flex-direction: column;
+        gap: var(--size-20);
+    }
+
+    .dot-box {
+        flex-direction: row;
+        align-items: center;
+        gap: var(--size-30);
+        margin-left: var(--size-50);
+    }
+    .hubspot-left {
+        max-height: 320px
+    }
+    .hubspot-left .woman {
+        max-height: 300px;
+    }
+    .hubspot-left .dots {
+        max-width: 150px;
+        right: 100px;
+        bottom: 240px;
+    }
+    .trusted h3 {
+        font-size: var(--size-20);
+    }
+
+    .trusted div {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--size-20);
+    }
+    .pricing {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonial {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--size-40);
+    }
+    .form-grid {
+        display: flex;
+        flex-direction: column;
+        gap: var(--size-20);
+    }
+
+    form textarea {
+        height: var(--size-150);
+    }
+
+    .pre-footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .pre-footer-list,
+    .pre-footer-list ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links  {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--size-20);
+    }
+
+    .socials {
+        text-align: center;
+    }
+    .socials select {
+        margin-top: var(--size-20) ;
+    }
+
+    .copyright {
+        margin: var(--size-30) var(--size-20);
+    }
+}
